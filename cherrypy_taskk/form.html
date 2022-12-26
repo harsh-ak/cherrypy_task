@@ -1,0 +1,58 @@
+<html>
+<head></head>
+<body>
+<div id="wrap">
+                <div class="container" style="border-style:double; margin-bottom:10px;">
+                    <form action="get_value()" method="POST">
+                        <!-- <input name="csrf_token" t-att-value="request.csrf_token()" type="hidden"/> -->
+                        <div class="form-group" id="nameid">
+                            <label for="getname">Name</label>
+                            <input class="form-control" id="getname" name="name" placeholder="Enter Name" t-att-value="contact_name" type="text"/>
+                        </div>
+                        <div class="form-group" id="mailid">
+                            <label for="getemail">Email address</label>
+                            <input aria-describedby="emailHelp" class="form-control" id="getemail" name="email" placeholder="Enter email" t-att-value="contact_email" type="email"/>
+                        </div>
+                        <div class="form-group" id="phoneid">
+                            <label for="getphno">Phone Number</label>
+                            <input class="form-control" id="getphno" maxlength="10" name="phone" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter Phone Number" t-att-value="contact_phone" type="phone"/>
+                        </div>
+                        <input name="contact_id" t-att-value="contact_id" type="hidden"/>
+                        <button class="btn btn-primary" style="margin-bottom:10px" type="submit">Add</button>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+          </body>
+            </html>
+
+
+
+            <div id="wrap">
+                <div class="container" style="border-style:double; margin-bottom:10px;">
+                    <form action="inser_value" method="get">
+                        <!-- <input name="csrf_token" t-att-value="request.csrf_token()" type="hidden"/> -->
+                        <div class="form-group" id="nameid">
+                            <label for="getname">Name</label>
+                            <input class="form-control" id="getname" name="name" placeholder="Enter Name" t-att-value="contact_name" type="text"/>
+                        </div>
+                        
+                        <div class="form-group" id="phoneid">
+                            <label for="getphno">Age</label>
+                            <input class="form-control" id="getphno" name="age" type="number"/>
+                        </div> 
+                        <div class="form-group" id="mailid">
+                            <label for="getemail">Email address</label>
+                            <input aria-describedby="emailHelp" class="form-control" id="getemail" name="email" placeholder="Enter email" t-att-value="contact_email" type="email"/>
+                        </div>
+                        <div class="form-group" id="phoneid">
+                            <label for="getphno">Phone Number</label>
+                            <input class="form-control" id="getphno" maxlength="10" name="phone" pattern="[7-9]{1}[0-9]{9}" placeholder="Enter Phone Number" t-att-value="contact_phone" type="phone"/>
+                        </div>
+                        <input name="contact_id" t-att-value="contact_id" type="hidden"/>
+                        <button class="btn btn-primary" style="margin-bottom:10px" type="submit">Add</button>
+                        <br/>
+                    </form>
+                </div>
+            </div>
+          </body>
